@@ -10,6 +10,8 @@
 
   <properties>
     <pentaho.version>9.0.0.0-SNAPSHOT</pentaho.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -25,7 +27,23 @@
       <groupId>com.ibm.db2.jcc</groupId>
       <artifactId>db2jcc4</artifactId>
       <version>4.22.29</version>
+      <scope>system</scope>
+      <systemPath>C:/Users/jjarvis/Desktop/DB2jcc4.jar</systemPath>
     </dependency>
+
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+    <groupId>commons-beanutils</groupId>
+    <artifactId>commons-beanutils</artifactId>
+    <version>1.9.3</version>
+</dependency>
 
   </dependencies>
 
